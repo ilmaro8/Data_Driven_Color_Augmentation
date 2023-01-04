@@ -43,15 +43,17 @@ Methods to perform data drive color augmentation (Augmentation.py):
 
 ## Database
 Database including color variations will be uploaded soon Zenodo.
+
 Method to extend database with new histopathology patches (extend_kd_tree_offline)
   * -i: input pickle file (database to extend)
   * -o: output pickle file
   * -d: csv including patches to extend database
+
 ## Training
 Scripts to train the CNN at path-level, in a fully-supervised fashion.
 Some parameters must be manually changed, such as the number of classes (output of the network).
 
-- Training_script.py -n -b -c -e -t -f -i -o. The script is used to train the CNN without any augmentation (no_augment), with colour augmentation (augment).
+- Training_new_augmentation.py -n -b -c -e -f -i -o -a -d. The script is used to train the CNN without any augmentation (no_augment), with colour augmentation (augment).
   * -n: number of the experiment for the training
   * -b: batch size (32)
   * -c: CNN backbone to use (densenet121)
@@ -60,7 +62,9 @@ Some parameters must be manually changed, such as the number of classes (output 
   * -f: if True an embedding layer with 128 nodes is inserted before the output layer
   * -i: path of the folder where the input csvs for training (train.csv), validation (valid.csv) and testing (test.csv) are stored
   * -o: path of the folder where to store the CNN’s weights.
-  
+  * -a: new augmentation to use: color (HSC color augmentation), stain (H&E stain augmentation), he (H&E-adversarial CNN + HSC color augmentation)
+  * -x: extend (False): add color variations training data to color variation dataset
+  * -d: database: database including color variations
 
 
 ## Acknoledgements
