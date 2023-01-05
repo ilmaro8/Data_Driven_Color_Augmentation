@@ -42,7 +42,7 @@ Methods to perform data drive color augmentation (Augmentation.py):
   * sigma2: range (-sigma1, sigma1) to generate random value to add to H&E components
 
 ## Database
-Database including color variations will be uploaded soon Zenodo.
+Database including color variations: https://zenodo.org/deposit/7505727.
 
 Method to extend database with new histopathology patches (extend_kd_tree_offline)
   * -i: input pickle file (database to extend)
