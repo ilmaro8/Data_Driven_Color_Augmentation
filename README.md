@@ -1,6 +1,6 @@
 # Data_Driven_Color_Augmentation
 
-Implementation of H\&E-adversarial network: a convolutional neural network to learn stain-invariant features through Hematoxylin & Eosin regression.
+Implementation of "Data-driven color augmentation for H&E stained images in computational pathology".
 
 ## Reference
 If you find this repository useful in your research, please cite:
