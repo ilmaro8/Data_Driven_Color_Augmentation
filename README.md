@@ -39,7 +39,7 @@ Methods to perform data drive color augmentation (Augmentation.py):
   * alpha: neighbors
   * beta: radius
   * sigma1: range (-sigma1, sigma1) to generate random value to multiply to H&E components
-  * sigma2: range (-sigma1, sigma1) to generate random value to add to H&E components
+  * sigma2: range (-sigma2, sigma2) to generate random value to add to H&E components
 
 ## Database
 Database including color variations: https://zenodo.org/record/7505727#.Y7ayO3bMJPY.
